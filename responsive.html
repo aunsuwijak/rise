@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: fantasy;
+      }
+
+      nav {
+        background-color: rgb(6, 177, 230);
+        padding: 10px 20px;
+        display: flex;
+      }
+
+      .logo {
+        width: 100px;
+        height: 30px;
+        background-color: azure;
+      }
+
+      .logo img {
+        width: 100%;
+        height: 100%;
+      } 
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-item div {
+        width: 100px;
+        text-align: center;
+      }
+
+      .nav-item div:hover {
+        opacity: 0.8;
+        cursor: pointer
+      }
+
+      .hamburger-menu { display: none; }
+
+      .hide {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+
+      /* Hamburger Menu */
+      @media only screen and (max-width: 768px) {
+        .nav-item { display: none; }
+        .hamburger-menu {
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+        }
+        .hamburger-menu::after {
+          content: '\2630';
+          margin-left: 10px;
+        }
+        .hamburger-menu:hover {
+          opacity: 0.8;
+          cursor: pointer
+        }
+        .dropdown {
+          position: absolute;
+          top: 50px;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+        .dropdown div {
+          background-color: aliceblue;
+          padding: 15px;
+        }
+        .dropdown div:hover {
+          opacity: 0.8;
+          cursor: pointer
+        }
+      }
+
+      .hero {
+        width: 100%;
+        height: 400px;
+        background-color: azure;
+        text-align: center;
+      }
+
+      .hero img {
+        width: auto;
+        height: 100%;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 0 30px;
+        text-align: center;
+      }
+
+      .container p {
+        text-align: left;
+      }
+
+      .content-image {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        background-color: azure;
+        margin: 10px;
+      }
+      
+      .content-image img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="https://robohash.org/example.png" />
+      </div>
+      <div class="nav-item">
+        <div>Home</div>
+        <div>Product</div>
+        <div>About us</div>
+        <div>Contact us</div>
+      </div>
+      <div class="hamburger-menu">
+        Menu
+        <div class="dropdown hide">
+          <div>Home</div>
+          <div>Product</div>
+          <div>About us</div>
+          <div>Contact us</div>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <img src="https://robohash.org/example.png" />
+    </div>
+    <div class="container">
+      <h1>Top 10 UX Articles</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sed ligula at convallis. Nunc convallis sed magna ut hendrerit. Aliquam orci erat, tincidunt sed arcu ullamcorper, commodo fringilla purus. Donec ornare dolor ac massa porttitor, vel dignissim ex blandit. Sed posuere nisl ac vulputate egestas. Sed magna massa, dignissim eget tincidunt sed, sodales sit amet massa. Etiam sapien orci, convallis nec elit in, pellentesque tincidunt ante. Cras ut ex ante. Phasellus posuere tincidunt fringilla. Quisque volutpat finibus leo. Nam in tincidunt dolor. Curabitur vehicula ex pulvinar felis efficitur fermentum. Maecenas blandit, velit sodales maximus scelerisque, enim ipsum sagittis metus, non dictum urna nulla in mi. Sed vestibulum ut velit ut congue. Praesent sed scelerisque sapien. Curabitur consectetur a tortor et dapibus.
+      </p>
+      <p>Morbi vestibulum efficitur ex at luctus. Maecenas vel dignissim est, eu commodo augue. Nam diam nibh, ultricies a libero aliquet, commodo suscipit orci. Pellentesque at malesuada ligula. Ut volutpat mi non est tempor, eu bibendum velit pulvinar. Vivamus sed ante quis erat blandit dictum. Sed vestibulum a augue commodo placerat. Aenean sit amet nisl tellus. Aenean egestas enim non eleifend euismod. Vivamus lobortis gravida eros, non ultrices tellus gravida eget. Phasellus finibus sodales mauris, semper condimentum eros auctor ac.
+      </p>
+      <p>Cras mi diam, auctor et luctus vitae, consectetur nec felis. Nam sem magna, vestibulum venenatis mauris vel, auctor porta eros. Donec vel dapibus metus. Nulla aliquet sagittis dolor id fermentum. Suspendisse eu elit ac lacus congue elementum. Etiam non posuere nisl, a scelerisque sapien. Proin id elementum dui. Vestibulum in facilisis leo. Nulla pulvinar luctus lacus, non porta tellus condimentum in. Ut feugiat est eget justo mattis porta.
+      </p>
+      <p>Maecenas hendrerit eleifend ullamcorper. Praesent in elit efficitur, gravida neque sit amet, ornare neque. Vivamus vitae lobortis leo. In viverra accumsan pulvinar. Mauris quis elementum lectus. Etiam pulvinar massa a lorem pellentesque euismod. Aliquam erat volutpat. Duis tempus ut magna vitae tempus. Quisque tempus lorem nibh, ac commodo tellus vulputate sed. Sed ullamcorper venenatis leo eget hendrerit. Sed lacinia elementum lacus, nec accumsan ante malesuada at.
+      </p>
+      <div class="content-image">
+        <img src="https://robohash.org/example.png" />
+      </div>
+      <div class="content-image">
+        <img src="https://robohash.org/example.png" />
+      </div>
+      <div class="content-image">
+        <img src="https://robohash.org/example.png" />
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sed ligula at convallis. Nunc convallis sed magna ut hendrerit. Aliquam orci erat, tincidunt sed arcu ullamcorper, commodo fringilla purus. Donec ornare dolor ac massa porttitor, vel dignissim ex blandit. Sed posuere nisl ac vulputate egestas. Sed magna massa, dignissim eget tincidunt sed, sodales sit amet massa. Etiam sapien orci, convallis nec elit in, pellentesque tincidunt ante. Cras ut ex ante. Phasellus posuere tincidunt fringilla. Quisque volutpat finibus leo. Nam in tincidunt dolor. Curabitur vehicula ex pulvinar felis efficitur fermentum. Maecenas blandit, velit sodales maximus scelerisque, enim ipsum sagittis metus, non dictum urna nulla in mi. Sed vestibulum ut velit ut congue. Praesent sed scelerisque sapien. Curabitur consectetur a tortor et dapibus.
+      </p>
+      <p>Morbi vestibulum efficitur ex at luctus. Maecenas vel dignissim est, eu commodo augue. Nam diam nibh, ultricies a libero aliquet, commodo suscipit orci. Pellentesque at malesuada ligula. Ut volutpat mi non est tempor, eu bibendum velit pulvinar. Vivamus sed ante quis erat blandit dictum. Sed vestibulum a augue commodo placerat. Aenean sit amet nisl tellus. Aenean egestas enim non eleifend euismod. Vivamus lobortis gravida eros, non ultrices tellus gravida eget. Phasellus finibus sodales mauris, semper condimentum eros auctor ac.
+      </p>
+      <p>Cras mi diam, auctor et luctus vitae, consectetur nec felis. Nam sem magna, vestibulum venenatis mauris vel, auctor porta eros. Donec vel dapibus metus. Nulla aliquet sagittis dolor id fermentum. Suspendisse eu elit ac lacus congue elementum. Etiam non posuere nisl, a scelerisque sapien. Proin id elementum dui. Vestibulum in facilisis leo. Nulla pulvinar luctus lacus, non porta tellus condimentum in. Ut feugiat est eget justo mattis porta.
+      </p>
+      <p>Maecenas hendrerit eleifend ullamcorper. Praesent in elit efficitur, gravida neque sit amet, ornare neque. Vivamus vitae lobortis leo. In viverra accumsan pulvinar. Mauris quis elementum lectus. Etiam pulvinar massa a lorem pellentesque euismod. Aliquam erat volutpat. Duis tempus ut magna vitae tempus. Quisque tempus lorem nibh, ac commodo tellus vulputate sed. Sed ullamcorper venenatis leo eget hendrerit. Sed lacinia elementum lacus, nec accumsan ante malesuada at.
+      </p>
+    </div>
+    <script type="text/javascript">
+      var dropdown = document.getElementsByClassName('dropdown')[0]
+      var menu = document.getElementsByClassName('hamburger-menu')[0]
+
+      menu.addEventListener('click', function() {
+        if (dropdown.classList.contains('hide')) {
+          dropdown.classList.remove('hide')
+          dropdown.classList.add('show')
+        } else {
+          dropdown.classList.remove('show')
+          dropdown.classList.add('hide')
+        }
+      })
+    </script>
+  </body>
+</html>
